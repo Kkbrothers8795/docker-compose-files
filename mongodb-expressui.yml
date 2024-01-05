@@ -23,11 +23,11 @@ services:
     container_name: mongo-express
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongodb
-      #- ME_CONFIG_MONGODB_ENABLE_ADMIN=true
-      #- ME_CONFIG_MONGODB_ADMINUSERNAME=root
-      #- ME_CONFIG_MONGODB_ADMINPASSWORD=pass12345
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=root
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=pass12345
       - ME_CONFIG_BASICAUTH_USERNAME=root
-      - ME_CONFIG_BASICAUTH_PASSWORD=root
+      - ME_CONFIG_BASICAUTH_PASSWORD=Kkraju00@123a
     volumes:
       - $HOME/uzrnem/database/mongo_db
     ports:
