@@ -1,9 +1,5 @@
 FROM mongo:5.0.6-focal
 
-RUN mkdir $HOME/uzrnem/database/mongo_db:/data/db
-RUN mkdir $HOME/uzrnem/database/backup:/backup
-RUN chmod -R 777 $HOME/uzrnem/
-
 VOLUME $HOME/uzrnem/database/backup:/backup
 VOLUME $HOME/uzrnem/database/mongo_db:/data/db
 
