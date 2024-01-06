@@ -1,8 +1,5 @@
 FROM mongo-express:1.0.0-18-alpine3.18
 
-RUN mkdir $HOME/uzrnem/database/mongo_db
-RUN chmod -R 777 $HOME/uzrnem/
-
 VOLUME $HOME/uzrnem/database/mongo_db
 
 ENV ME_CONFIG_MONGODB_SERVER=mongodb
